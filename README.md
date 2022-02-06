@@ -16,7 +16,7 @@ El sistema proporcionará la información en diferentes formatos, reportes desca
 
 ### Diagrama ###
 
-![PracticaArquitecturaBigData_Mel](https://user-images.githubusercontent.com/2152086/152688094-0b3dd59a-5a9d-48cc-bded-4b0e75c40ba7.jpg)
+![PracticaArquitecturaBigData-v3](https://user-images.githubusercontent.com/2152086/152693856-c725eb58-11a8-4909-b941-ca0ec1ba6a2c.jpg)
 
 
 
