@@ -33,9 +33,9 @@ La arquitectura diseñada para ser implementada en su totalidad sobre herramient
 #### Bloques Funcionales. ####
 El sistema planteado presenta tres bloques funcionales muy identificables:
 
-* **Obtención de datos**: Es la primera parte del sistema y como su nombre indica, en ella realizamos la obtencion de los datos que vamos a utilizar. Los datos vienen de diferentes fuentes que podríamos resumir en las siguientes: herramientas utilizadas por los equipos de atención al cliente, archivos de uso diario, la base de datos del software de la compañía, las redes sociales o los archivos de log de los servidores que dan servicios.
-* **Tratamiento de datos**: Es la segunda parte del sistema y es donde realizaremos las transformaciones, tratamientos y análisis necesarios sobre los datos obtenidos. 
-* **Obtención de resultados**: A partir del análisis realizado obtendremos una serie de resultados que estarán disponibles en diferentes formatos, desde archivos CSV listos para descargas hasta herramientas de visualización.
+* **Obtención de datos** (Zona de ingesta): Es la primera parte del sistema y como su nombre indica, en ella realizamos la obtencion de los datos que vamos a utilizar. Los datos vienen de diferentes fuentes que podríamos resumir en las siguientes: herramientas utilizadas por los equipos de atención al cliente, archivos de uso diario, la base de datos del software de la compañía, las redes sociales o los archivos de log de los servidores que dan servicios.
+* **Tratamiento de datos** (Zona de procesamiento): Es la segunda parte del sistema y es donde realizaremos las transformaciones, tratamientos y análisis necesarios sobre los datos obtenidos. 
+* **Obtención de resultados** (Zona de almacenamiento): A partir del análisis realizado obtendremos una serie de resultados que estarán disponibles en diferentes formatos, desde archivos CSV listos para descargas hasta herramientas de visualización.
 
 
 
