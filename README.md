@@ -7,6 +7,7 @@ Diseñar, especificar y desplegar (opcional) un data lake para el procesamiento 
 
 
 
+
 ### Definición de la estrategía del DAaaS: ###
 Sistema de inteligencia de negocio, que centralizará toda aquella información importante para la organización y que aplicando el gobierno del dato los diferentes departamentos y sus empleados tendrán acceso a la información de manera segmentada.
 
@@ -14,21 +15,22 @@ El sistema proporcionará la información en diferentes formatos, reportes desca
 
 
 
-### Diagrama ###
+
+### Diagrama: ###
 
 ![PracticaArquitecturaBigData_Mel](https://user-images.githubusercontent.com/2152086/152688094-0b3dd59a-5a9d-48cc-bded-4b0e75c40ba7.jpg)
 
 
 
 
-### Arquitectura DAaaS ###
+### Arquitectura DAaaS: ###
 La arquitectura diseñada para ser implementada en su totalidad sobre herrmientas cloud, de una manera eficiente, escalable y polivalente se compone de dos lineas de procesamiento totalmente diferenciadas:
 
 * Una realizará procesamiento de datos por lotes.
 * La otra realizará procesamiento de datos en real time.
 
 
-#### Bloques Funcionales ####
+#### Bloques Funcionales. ####
 El sistema planteado presenta tres bloques funcionales muy identificables:
 
 * **Obtención de datos**: Es la primera parte del sistema y como su nombre indica, en ella realizamos la obtencion de los datos que vamos a utilizar. Los datos vienen de diferentes fuentes que podríamos resumir en los siguiente, herramientas utilizadas por los equipos de atección al cliente, archivos de uso diario, la base de datos del software de la compañia, las redes sociales o los archivos de log de los servidores que dan servicios.
@@ -37,7 +39,7 @@ El sistema planteado presenta tres bloques funcionales muy identificables:
 
 
 
-#### Elementos de la arquitectura ####
+#### Elementos de la arquitectura. ####
 El sistema contará con diferentes tecnologías y herrmientas:
 
 * **Google Storage**: Será utilizado para el almacenamiento de datos.
@@ -49,10 +51,11 @@ El sistema contará con diferentes tecnologías y herrmientas:
 
 
 
-### DAaaS Operating Model Design and Rollout ###
+
+### DAaaS Operating Model Design and Rollout: ###
 En el diseño operativo vamos a describir cada uno de los procesos que van a ocurrir dentro de nuestra arquitectura y que la suma de todos ellos darán como resultado la información a explotar por parte de los integrantes de la organización.
 
-**Parte de la arquitectura de procesamiento por lotes**
+**Parte de la arquitectura de procesamiento por lotes.**
 
 * Zona de ingesta de datos.
 	* Dispondremos diferentes job (uno para cada herramienta de producción de la que queremos obtener datos) que se ejecutarán diariamente a la media noche, que se encargaran de traer la información necesaria de los sistemas de producción a nuestros sistema de data, para no interferir en la carga de los servidores. Estos jobs, serán ejecutados en un Dataproc que estará levantado mientras sucede la ingesta de esta información y que el resultado será gravado en Hive donde será procesado.
@@ -71,7 +74,7 @@ En el diseño operativo vamos a describir cada uno de los procesos que van a ocu
 	* Tambien será posible utilizar aplicaciones que consuman los datos en formato json que será otro de los formatos en los dejaremos la información.
 
 
-**Parte de la arquitectura de procesamiento en real time**
+**Parte de la arquitectura de procesamiento en real time.**
 
 * Zona de ingesta de datos.
 	* 	Dispondremos de algunos job que enviaran información a Kafka en función de las necesidades definidas.
