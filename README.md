@@ -16,7 +16,8 @@ El sistema proporcionará la información en diferentes formatos, reportes desca
 
 ### Diagrama ###
 
-*_Subir la imagen a GitHub_*
+![PracticaArquitecturaBigData_Mel](https://user-images.githubusercontent.com/2152086/152688094-0b3dd59a-5a9d-48cc-bded-4b0e75c40ba7.jpg)
+
 
 
 
@@ -33,6 +34,7 @@ El sistema planteado presenta tres bloques funcionales muy identificables:
 * **Obtención de datos**: Es la primera parte del sistema y como su nombre indica, en ella realizamos la obtencion de los datos que vamos a utilizar. Los datos vienen de diferentes fuentes que podríamos resumir en los siguiente, herramientas utilizadas por los equipos de atección al cliente, archivos de uso diario, la base de datos del software de la compañia, las redes sociales o los archivos de log de los servidores que dan servicios.
 * **Tratamiento de datos**: Es la segunda parte del sistema y es donde realizaremos las transformaciones, tratamientos y análisis necesarios sobre los datos obtenidos. 
 * **Obtención de resultados**: A partir del análisis realizado obtendremos una serie de resultados que estarán disponibles en diferentes formatos, desde archivos CSV listos para descargas hasta herramientas de visualización.
+
 
 
 #### Elementos de la arquitectura ####
